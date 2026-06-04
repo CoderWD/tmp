@@ -259,6 +259,171 @@ def filter_m3u8_from_video_formats(info_dict):
     return info_dict
 
 
+SEARCH_PREFIX_MAP = {
+    'youtube': 'ytsearch',
+    'soundcloud': 'scsearch',
+}
+
+
+def _setup_python_paths_and_plugins(version):
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    for root, dirs, files in os.walk(current_dir):
+        if root not in sys.path:
+            sys.path.append(root)
+    if compare_version(version, "1.3.12") > 0:
+        plugin_dir = os.path.join(current_dir, "yt_dlp_plugins")
+        plugin_dirs.value = [plugin_dir, 'default']
+
+
+def _apply_cookies_to_ydl_opts(ydl_opts, cookie_str, cookies_file_path):
+    if cookies_file_path:
+        ydl_opts['cookiefile'] = cookies_file_path
+        print(f"使用 cookies 文件: {cookies_file_path}")
+    else:
+        print("警告: 无法创建 cookies 文件，将不使用 cookies")
+        cookie_string = process_cookie(cookie_str)
+        if cookie_string:
+            ydl_opts['http_headers'] = {'Cookie': cookie_string}
+            print("备用方案：使用 http_headers 传递 cookies")
+
+
+def _upgrade_thumbnail_url(url, entry=None):
+    if not url or not isinstance(url, str):
+        return url
+    if 'sndcdn.com' in url:
+        url = re.sub(r'-t\d+x\d+\.', '-t500x500.', url)
+        url = re.sub(r'-(?:large|small|badge|tiny|mini)\.', '-t500x500.', url)
+        return url
+    if 'ytimg.com' in url or (entry and entry.get('ie_key') == 'Youtube'):
+        video_id = None
+        if entry:
+            raw_id = entry.get('id')
+            if isinstance(raw_id, str) and len(raw_id) == 11 and ' ' not in raw_id:
+                video_id = raw_id
+        if not video_id:
+            match = re.search(r'/vi/([^/]+)/', url)
+            video_id = match.group(1) if match else None
+        if video_id:
+            return f'https://i.ytimg.com/vi/{video_id}/hqdefault.jpg'
+    return url
+
+
+def _pick_thumbnail(entry):
+    thumbs = entry.get('thumbnails') or []
+    candidates = []
+    if isinstance(thumbs, list):
+        for thumb_item in thumbs:
+            if not isinstance(thumb_item, dict):
+                continue
+            thumb_url = thumb_item.get('url')
+            if not thumb_url:
+                continue
+            width = thumb_item.get('width') or 0
+            height = thumb_item.get('height') or 0
+            candidates.append((width * height, thumb_url))
+
+    single = entry.get('thumbnail')
+    if single:
+        candidates.append((0, single))
+
+    if not candidates:
+        return None
+
+    candidates.sort(key=lambda item: item[0], reverse=True)
+    return _upgrade_thumbnail_url(candidates[0][1], entry)
+
+
+def _normalize_search_entry(entry):
+    if not entry or not isinstance(entry, dict):
+        return None
+    entry_id = entry.get('id')
+    webpage_url = entry.get('webpage_url') or entry.get('url')
+    if not webpage_url and entry_id:
+        if isinstance(entry_id, str) and entry_id.startswith('http'):
+            webpage_url = entry_id
+        elif entry.get('ie_key') == 'Youtube':
+            webpage_url = f"https://www.youtube.com/watch?v={entry_id}"
+    if not webpage_url:
+        return None
+    return {
+        'id': entry_id,
+        'title': entry.get('title') or entry.get('fulltitle') or '',
+        'url': webpage_url,
+        'webpage_url': webpage_url,
+        'thumbnail': _pick_thumbnail(entry),
+        'duration': entry.get('duration'),
+        'uploader': entry.get('uploader') or entry.get('channel') or entry.get('uploader_id'),
+        'view_count': entry.get('view_count'),
+    }
+
+
+def search(query, cookie_str, json_param_str, library_path, version="1.3.12"):
+    """yt-dlp 站点搜索，返回 entries 列表 JSON。"""
+    print(f"search from python: {query}")
+    print(f"param: {json_param_str}")
+    cookies_file_path = None
+    try:
+        if not query or not str(query).strip():
+            return extractor_exception_json(query or "", "Search query is empty")
+
+        limit = 20
+        search_type = 'youtube'
+        if json_param_str:
+            try:
+                params = json.loads(json_param_str)
+                limit = int(params.get('limit', limit))
+                search_type = str(params.get('type', search_type)).lower()
+            except Exception as parse_error:
+                print(f"search param parse warning: {parse_error}")
+
+        limit = max(1, min(limit, 50))
+        prefix = SEARCH_PREFIX_MAP.get(search_type, 'ytsearch')
+        search_url = f"{prefix}{limit}:{query.strip()}"
+
+        _setup_python_paths_and_plugins(version)
+        cache_dir = make_cache_dir(library_path)
+        cookies_file_path = create_cookies_file(cookie_str, cache_dir)
+
+        ydl_opts = {
+            'socket_timeout': 20,
+            'quiet': True,
+            'dumpjson': True,
+            'cachedir': cache_dir,
+            'noplaylist': False,
+            'extract_flat': 'in_playlist',
+            'remote_components': ['ejs:github'],
+        }
+        _apply_cookies_to_ydl_opts(ydl_opts, cookie_str, cookies_file_path)
+
+        with YoutubeDL(ydl_opts) as ydl:
+            info_dict = ydl.extract_info(search_url, download=False)
+
+        entries = []
+        if info_dict:
+            raw_entries = info_dict.get('entries') or []
+            for entry in raw_entries:
+                normalized = _normalize_search_entry(entry)
+                if normalized and normalized.get('title'):
+                    entries.append(normalized)
+
+        result = {
+            'query': query.strip(),
+            'search_type': search_type,
+            'entries': entries,
+        }
+        return json.dumps(result, ensure_ascii=False)
+
+    except Exception as e:
+        print(f"search error: {e}")
+        return extractor_exception_json(query or "", str(e))
+    finally:
+        if cookies_file_path and os.path.exists(cookies_file_path):
+            try:
+                os.remove(cookies_file_path)
+            except Exception as cleanup_error:
+                print(f"清理 cookies 文件失败: {cleanup_error}")
+
+
 def extract(url, cookie_str, json_param_str, library_path, version="1.3.12"):
     print(f"extract from python: {url}")
     print(f"param: {json_param_str}")
@@ -266,17 +431,7 @@ def extract(url, cookie_str, json_param_str, library_path, version="1.3.12"):
     print(f"version: {version}")
     result = ""
     try:
-        current_dir = os.path.dirname(os.path.abspath(__file__))
-        # 遍历当前目录及其所有子目录
-        for root, dirs, files in os.walk(current_dir):
-            if root not in sys.path:  # 避免重复添加
-                sys.path.append(root)
-
-        # 设置插件目录
-        if compare_version(version, "1.3.12") > 0:
-            plugin_dir = os.path.join(current_dir, "yt_dlp_plugins")  # 或者你想要的任何路径
-            plugin_dirs.value = [plugin_dir, 'default']  # 包含自定义目录和默认目录
-
+        _setup_python_paths_and_plugins(version)
         cache_dir = make_cache_dir(library_path)
 
         # 创建 cookies 文件
