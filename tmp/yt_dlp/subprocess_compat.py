@@ -119,9 +119,14 @@ class subprocess:
             if self._thread.is_alive():
                 self._thread.join()  # 等待线程终止
 
-        def communicate(self, timeout=None):
+        def kill(self):
+            """终止线程运行，模拟 subprocess 的 kill 方法。"""
+            self.terminate()
+
+        def communicate(self, input=None, timeout=None):
             """
             等待线程完成，并返回 stdout 和 stderr 的内容。
+            :param input: 写入 stdin 的数据（iOS 环境下忽略）
             :param timeout: 等待超时时间
             """
             try:
