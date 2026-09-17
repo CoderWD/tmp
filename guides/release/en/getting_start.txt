@@ -1,0 +1,503 @@
+OFFLINE ULTRA — GETTING STARTED (SAMPLE TXT)
+Bundled sample for Home → Downloads / Files
+========================================================================
+
+This plain-text sample mirrors the PDF user guide in a lighter form.
+It introduces Offline Ultra as an offline media player, file manager,
+document downloader (direct links), and built-in multi-tab browser.
+Please only save content you have the right to use.
+
+1. WELCOME TO OFFLINE ULTRA
+---------------------------
+Welcome to Offline Ultra — Media Browser. This sample document is bundled with the app so you can immediately see how Documents appear in your Downloads list and how the Files tab organizes ordinary files such as PDF and TXT.
+
+Offline Ultra helps you keep media and documents on your iPhone or iPad, play them offline, organize playlists and folders, import from places you already trust (Files / iCloud, Photos, and local Wi‑Fi), and browse the web with a built‑in multi‑tab browser.
+
+This guide deliberately focuses on features that help you manage YOUR content: files you own, files you created, files your organization shared with you, or files you obtained through legitimate means. Please respect copyright and the terms of service of any website or service you visit.
+
+Tip: Open this PDF from Home → Downloads, or from the Files tab after first launch. The matching TXT sample shows the same ideas in plain text for quick reading on any device.
+
+
+2. PRODUCT OVERVIEW (WHAT THIS APP IS FOR)
+------------------------------------------
+Offline Ultra is an offline‑first media and file companion:
+
+• Local library: Keep audio, video, and documents on device for playback and preview without a constant network connection.
+
+• Downloads list: Track completed downloads and open finished items from Home.
+
+• Files manager: Browse folders, search, rename, move, and delete; import from iCloud Drive, Photos, or a computer on the same Wi‑Fi network.
+
+• Playlists & favorites: Build music/video playlists, star favorites, and resume with a mini player.
+
+• Built‑in browser: Open websites in multiple tabs, bookmark pages you care about, and use the address or search bar like a normal mobile browser.
+
+• Playback extras: Lock‑screen controls, background audio, sleep timer, appearance themes, and optional app lock.
+
+Important: Always download and import only content you have the right to use. Offline Ultra is a player and organizer — not a tool for bypassing protections or taking content without permission.
+
+
+3. FIRST‑LAUNCH WALKTHROUGH
+---------------------------
+After installation you will see four main tabs along the bottom:
+
+1) Home — library shortcuts, Downloads list, search in your local library, and settings entry.
+
+2) Files — folder browser and import hub for documents and media already on your device or computer.
+
+3) Browser — multi‑tab web browsing with bookmarks and a familiar toolbar.
+
+4) Playlists — All Media, Favorites, Recently Played, and your custom playlists.
+
+On first launch, Offline Ultra may seed a few sample items (such as short music tracks and this guide) so the Downloads and library areas never look empty. You can delete samples anytime; they are only helpers.
+
+Suggested first steps (5 minutes):
+
+• Play a sample track from Playlists → Music (or Home) to verify sound and lock‑screen controls.
+
+• Open this PDF from Downloads to confirm document handling.
+
+• Go to Files → Import and try pulling a photo or a document from Files / iCloud.
+
+• Optionally start the local Wi‑Fi import page and upload a file from your computer’s browser.
+
+• Open Browser, visit a site you normally use, and add a bookmark.
+
+
+4. HOME TAB — DOWNLOADS, SEARCH, AND SHORTCUTS
+----------------------------------------------
+Home is your daily dashboard for local content.
+
+Downloads list: Shows completed (and in‑progress) download items. Sample music and this user guide appear here after install so reviewers and new users can see that Offline Ultra stores ordinary documents as well as media. Tap an item to open or play it according to its type.
+
+Add download (+): Paste a direct HTTP/HTTPS link to a file you are allowed to download — for example a public sample PDF, ZIP archive, spreadsheet, or other non‑restricted file hosted on a server you trust. The download manager saves the file into the appropriate local folder and lists it under Downloads / Files when finished.
+
+Library search: Search titles already in your offline library. Results stay on‑device; they do not scrape third‑party catalogs.
+
+Shortcuts: Jump into Files, Browser, Playlists, or Settings without digging through menus.
+
+Mini player: When something is playing, a compact bar lets you pause, resume, or return to the full player from almost any screen.
+
+
+5. FILES TAB — ORGANIZE WHAT IS ALREADY YOURS
+---------------------------------------------
+The Files tab is the backbone of Offline Ultra’s “offline utility” story. Think of it as a lightweight file manager tailored for media and documents.
+
+Browse: Folders group content by type or by folders you create. Search filters long lists quickly.
+
+Manage: Rename, move between folders, multi‑select delete, and open documents with the system preview where available.
+
+Import from Files / iCloud: Use the system document picker to copy files from iCloud Drive, On My iPhone, third‑party file providers, or shared folders. This is the safest way to bring large libraries you already own into Offline Ultra.
+
+Import from Photos: Bring videos or images from your photo library when you want them in the app’s folders for offline use or playlist building.
+
+Import from computer (local Wi‑Fi): Start the in‑app local web server, open the shown URL on a computer connected to the same Wi‑Fi network, and upload files through the browser page. Ideal for moving lecture recordings, personal videos, ebooks, or office documents without cables.
+
+After import, files appear under Files and — when applicable — become available to Playlists and the player.
+
+
+6. DOWNLOADS — DIRECT LINKS TO ORDINARY FILES
+---------------------------------------------
+Offline Ultra can download files from a direct URL you paste yourself. This is useful for course materials, open documentation, software release ZIP files, PDF manuals, CSV exports, and similar assets published as plain downloadable links.
+
+How to add a download:
+
+1. From Home or Tasks, tap the add / download action.
+
+2. Paste a full https://… link that points to the file itself (not merely a web page).
+
+3. Confirm. Progress appears in the task / downloads UI; you can leave the app — background transfer continues when the system allows.
+
+4. When complete, open the item from Downloads or locate it under Files.
+
+Good candidates: PDF manuals, TXT readmes, ZIP of your own backups, Office documents shared via direct link by your school or workplace.
+
+Please do not attempt to download material you do not have rights to. Follow copyright law and each site’s terms. If a site requires a licensed client or forbids bulk saving, use that site’s official tools instead.
+
+
+7. BUILT‑IN BROWSER — TABS, BOOKMARKS, AND DISCOVERY OF INFORMATION
+-------------------------------------------------------------------
+The Browser tab is a multi‑tab WebKit browser for everyday browsing on the go.
+
+Address & search bar: Enter a URL or a search query. Recommended sites may appear as shortcuts for popular destinations you choose to visit yourself.
+
+Tabs: Open several pages at once, switch between them, and close ones you no longer need — similar to Safari’s tab overview patterns.
+
+Bookmarks & recent: Star pages you revisit often; recent lists help you return without retyping.
+
+Toolbar: Back, forward, reload, and new tab keep navigation familiar.
+
+Site login when needed: Some websites require signing in. Offline Ultra can open a guided login flow so cookies are set for pages you are allowed to access with your own account.
+
+Remember: The browser is for visiting the open web as you would in any mobile browser. Always obey the rules of the websites you visit and only save files you are permitted to keep.
+
+
+8. PLAYLISTS, FAVORITES, AND LIBRARY STRUCTURE
+----------------------------------------------
+Playlists keep listening and watching organized without leaving the app.
+
+System tiles: All Media, Shuffle All, Favorites, and Recently Played give one‑tap entry into your library.
+
+Default Music / Video lists: Audio and video you add can be sorted into these collections; you may customize covers.
+
+My Playlists: Create named lists, reorder, and switch between list and grid layouts with cover art.
+
+Favorites: Star tracks or videos for a personal shortlist.
+
+Covers: Prefer a custom image; otherwise the app may show the first media cover or a brand‑colored placeholder.
+
+Home no longer stacks every “continue playing” widget on top; recent history lives under Playlists, while the mini player restores your last queue when available.
+
+
+9. MEDIA PLAYER — OFFLINE FIRST
+-------------------------------
+The full‑screen player is built for reliability offline.
+
+Transport: Play / pause, previous / next, scrub on the progress bar.
+
+Repeat modes: List loop, single track loop, or shuffle.
+
+Now Playing: Lock screen and Control Center / headset commands stay in sync via system Now Playing APIs so you can control playback without unlocking.
+
+Background audio: Keep listening while browsing Files or using other apps (subject to iOS background policies).
+
+Sleep timer: Fade out or stop after a chosen duration — useful at night.
+
+Mini player: Continues across tabs so you never lose your place.
+
+Format helpers: When needed, Offline Ultra can use on‑device conversion tools to normalize certain local media so they play more consistently. Conversion works on files already on your device.
+
+
+10. SETTINGS — APPEARANCE, SECURITY, PREMIUM
+--------------------------------------------
+Appearance: Choose Light, Dark, or Follow System. Brand accents use a fresh teal aligned with the app icon and splash.
+
+Typography: Adjust reading comfort where the app exposes font options.
+
+App lock: Optionally protect entry with device authentication patterns supported by the security screen.
+
+Premium / subscription: Unlock ad‑free and membership benefits described on the Premium page. Purchases use Apple’s standard StoreKit flow.
+
+Privacy policy, Terms, About, and Rate Us: Standard storefront links and feedback paths live under Settings.
+
+Ads (free tier): Non‑subscribers may see interstitial ads under the product’s frequency rules. New installs and certain reward periods can be ad‑free; Premium removes ads.
+
+
+11. DETAILED FEATURE COOKBOOK
+-----------------------------
+A. Build a weekend offline pack
+
+Import a folder of personal recordings via Wi‑Fi upload, create a playlist named “Weekend”, add items, enable shuffle, and set a sleep timer.
+
+B. Study with PDFs
+
+Download or import lecture PDFs (like this sample). Keep them under Files for Quick Look preview. Keep related audio notes in a Music playlist.
+
+C. Family photo slideshow materials
+
+Import preferred videos from Photos into Files, add them to a Video playlist, and play on a larger display with AirPlay / HDMI when your system supports it.
+
+D. Travel mode
+
+Before a flight, confirm Downloads completed, toggle appearance to Dark for cabin lighting, download any last TXT/PDF itineraries via direct links you own, and enable app lock if you share devices.
+
+E. Cleanup day
+
+Use Files search to find duplicates by name, multi‑select delete obsolete exports, and keep only current playlists. Sample media and guides can be removed once you are familiar with the UI.
+
+
+12. ACCESSIBILITY AND EVERYDAY TIPS
+-----------------------------------
+• Prefer meaningful file names before import so search works better later.
+
+• Keep large libraries on device storage with enough free space; iOS may purge caches under pressure, but your imported files in Offline Ultra’s directories persist until you delete them.
+
+• Use descriptive playlist names (“Commute”, “Kids stories”, “Language practice”).
+
+• When pasting download URLs, verify HTTPS and that the link ends with a real file extension when possible (.pdf, .txt, .zip, .docx, …).
+
+• If a download fails, check network, URL expiry, and whether the server requires a login cookie — for authenticated portals, export the file to Files first, then import.
+
+• Force‑quit rarely during active downloads; background sessions are more reliable if the system can finish the task.
+
+
+13. PRIVACY, SAFETY, AND RESPONSIBLE USE
+----------------------------------------
+Offline Ultra stores media and documents locally on your device. Treat that storage like any personal folder: do not import confidential work files onto a shared iPad without an app lock.
+
+The built‑in browser can access the open web. As with Safari, you are responsible for the sites you visit and the accounts you sign into.
+
+Copyright & licensing: Only keep copies of works you created, that are licensed to you, that are in the public domain, or that a rights holder explicitly allows you to download. Do not use this app to infringe copyrighted streaming catalogs or to bypass technical protection measures.
+
+Children: Follow Apple’s age rating guidance and family sharing practices if a child uses the device.
+
+Feedback: If something is unclear in the UI, use Settings → Rate Us / feedback channels so we can improve labels and help screens.
+
+
+14. FAQ
+-------
+Q: Where did this PDF come from?
+
+A: It is a bundled sample copied into Downloads / Files on first launch so you can try document opening immediately.
+
+Q: Can I delete samples?
+
+A: Yes. Removing a sample from Downloads dismisses that download row; you can also delete the file under Files.
+
+Q: How do I get my own PDFs in?
+
+A: Import via Files / iCloud, Photos (for media), Wi‑Fi upload from a computer, or paste a direct file URL you are allowed to download.
+
+Q: Does Offline Ultra replace Safari?
+
+A: No. It includes a convenient in‑app browser for discovery and bookmarks while you work with your offline library.
+
+Q: Why emphasize documents in this sample?
+
+A: Documents (PDF, TXT, Office, ZIP, …) demonstrate Offline Ultra’s general download and file‑management capabilities clearly, alongside audio/video playback.
+
+Q: What about Premium?
+
+A: Premium removes ads and unlocks membership benefits listed on the purchase screen. Core offline playback and file import remain available to explore.
+
+
+15. APPENDIX — GLOSSARY
+-----------------------
+Downloads list: Home surface showing download tasks and completed items.
+
+Files tab: Local folder browser and import center.
+
+Direct URL download: Saving a file from a link that already points at the file bytes.
+
+Playlist: Ordered collection of media for continuous playback.
+
+Mini player: Compact playback controls that persist across tabs.
+
+Wi‑Fi import: Temporary local HTTP page for uploading from a computer on the same network.
+
+Now Playing: System integration for lock‑screen / Control Center media controls.
+
+App lock: Optional gate before entering the app UI.
+
+
+16. APPENDIX — LONG‑FORM PRODUCT NARRATIVE
+------------------------------------------
+Offline Ultra exists because modern life still needs reliable offline pockets: flights, subways, classrooms with weak Wi‑Fi, kids’ devices with limited data plans, and field work away from the office. Streaming is wonderful when the network cooperates; Offline Ultra is for the hours when it does not.
+
+Design‑wise the app keeps four jobs close: find information in a browser, bring files you already own into a private library, arrange them into playlists and folders, and play them with system‑grade controls. The Downloads list is the bridge between “I just saved something” and “I can find it again tomorrow.”
+
+Sample music demonstrates playback immediately. This sample guide demonstrates that ordinary documents belong in the same workflow — download, store, open — without requiring you to understand advanced media tooling on day one.
+
+As you grow into the app, lean on import paths first. Dragging your own library from a laptop over Wi‑Fi or selecting files from iCloud is usually faster and clearer than hunting for remote links. Direct URL download is there for the cases where a school portal or documentation site already published a clean file link.
+
+Visual appearance matters on long trips: Dark Mode reduces glare; Light Mode stays crisp outdoors; Follow System keeps continuity with iOS. The teal brand color is intentional — calm enough for long listening, distinct enough to recognize in a sea of icons.
+
+If you are evaluating Offline Ultra for a classroom, team, or family: start with a shared checklist — import a known PDF, play a short audio clip, create one playlist, bookmark one internal wiki page in the browser, and confirm app lock works on shared hardware. Those five checks cover the majority of daily needs.
+
+Thank you for trying Offline Ultra. Whether you keep only this guide and a favorite album, or build a large personal archive, the goal is the same: your files, on your device, ready when the network is not.
+
+
+17. APPENDIX — STEP CHECKLISTS (PRINT‑FRIENDLY)
+-----------------------------------------------
+Checklist — Import from iCloud / Files
+
+□ Open Files tab → Import → choose Files / iCloud.
+
+□ Select one or more items → confirm copy into Offline Ultra.
+
+□ Verify they appear in the folder list and open correctly.
+
+
+
+Checklist — Wi‑Fi computer upload
+
+□ Phone and computer on the same Wi‑Fi.
+
+□ Start import server in the app; note the URL.
+
+□ On the computer browser, open the URL and upload.
+
+□ Confirm completion in Files; stop the server when done.
+
+
+
+Checklist — Direct document download
+
+□ Obtain a legitimate direct file URL ending in a document extension.
+
+□ Home / Downloads → add → paste URL → start.
+
+□ Wait for 100% → open from Downloads or Files.
+
+
+
+Checklist — Playlist evening
+
+□ Playlists → create “Evening”.
+
+□ Add several local audio items.
+
+□ Set repeat or shuffle; optionally start sleep timer.
+
+□ Lock the phone and confirm Control Center controls still work.
+
+
+18. CLOSING
+-----------
+You have reached the end of the Offline Ultra sample user guide (PDF edition). The companion TXT file contains a condensed plain‑text version of the same product story for environments where PDF preview is inconvenient.
+
+Explore at your own pace, keep only content you have rights to use, and enjoy listening, watching, and reading offline.
+
+— Offline Ultra Team
+
+Document type: Bundled sample — Offline Ultra User Guide
+
+Format: PDF  •  Audience: New users & App Review walkthroughs  •  Language: English
+
+
+EXTRA READING — DAY-IN-THE-LIFE SCENARIOS
+----------------------------------------
+
+Morning commute: Queue a Music playlist, enable list repeat, and skim a TXT itinerary.
+Classroom: Import slides as PDF via Wi-Fi; keep recorded voice notes in a playlist named after the course.
+Flight: Pre-download document packs (PDF/ZIP) you own; switch to Dark Mode; set sleep timer after boarding.
+Family device: Enable app lock; keep kids' audio in a dedicated playlist; store permission slips as PDF under Files.
+Field work: Use Browser bookmarks for internal docs pages; export needed files to Files offline ahead of time.
+
+EXTENDED NOTES ON FILE TYPES
+----------------------------------------
+
+Documents Offline Ultra commonly organizes include pdf, txt, doc/docx, xls/xlsx, csv, ppt/pptx, and zip archives.
+Audio examples include mp3, m4a, aac, wav, flac, and similar formats supported by the player stack.
+Video examples include mp4, mov, m4v, and other types the system player can open.
+Images can be imported for storage and reference alongside your media library.
+
+Whatever the type, the principle is identical: the file must already be yours to keep,
+or published with a clear license that allows downloading a personal copy.
+
+END OF SAMPLE TXT
+
+NUMBERED PRODUCT TIPS (001–120)
+----------------------------------------
+001. Keep filenames readable before import. (tip #1)
+002. Group course materials by semester folders. (tip #2)
+003. Use Favorites for daily essentials only. (tip #3)
+004. Clear completed Tasks occasionally for a tidy Downloads list. (tip #4)
+005. Prefer HTTPS direct links when downloading documents. (tip #5)
+006. Verify free storage before large Wi-Fi uploads. (tip #6)
+007. Name playlists by context, not by date alone. (tip #7)
+008. Try Dark Mode for nighttime reading of this guide. (tip #8)
+009. Use search in Files when libraries grow past a few dozen items. (tip #9)
+010. Bookmark stable reference sites in the Browser tab. (tip #10)
+011. Revisit Recently Played when you forgot the playlist name. (tip #11)
+012. Delete bundled samples after you no longer need demos. (tip #12)
+013. Keep personal IDs out of shared iPad libraries. (tip #13)
+014. Turn on app lock for shared family hardware. (tip #14)
+015. Upload from computer when phone cameras are low on space. (tip #15)
+016. Store manuals (like this PDF) next to related audio notes. (tip #16)
+017. Use TXT for quick checklists that open everywhere. (tip #17)
+018. Confirm download completed before boarding a plane. (tip #18)
+019. Shuffle long libraries; use single loop for language drills. (tip #19)
+020. Keep Premium benefits in mind if ads interrupt your workflow. (tip #20)
+021. Keep filenames readable before import. (tip #21)
+022. Group course materials by semester folders. (tip #22)
+023. Use Favorites for daily essentials only. (tip #23)
+024. Clear completed Tasks occasionally for a tidy Downloads list. (tip #24)
+025. Prefer HTTPS direct links when downloading documents. (tip #25)
+026. Verify free storage before large Wi-Fi uploads. (tip #26)
+027. Name playlists by context, not by date alone. (tip #27)
+028. Try Dark Mode for nighttime reading of this guide. (tip #28)
+029. Use search in Files when libraries grow past a few dozen items. (tip #29)
+030. Bookmark stable reference sites in the Browser tab. (tip #30)
+031. Revisit Recently Played when you forgot the playlist name. (tip #31)
+032. Delete bundled samples after you no longer need demos. (tip #32)
+033. Keep personal IDs out of shared iPad libraries. (tip #33)
+034. Turn on app lock for shared family hardware. (tip #34)
+035. Upload from computer when phone cameras are low on space. (tip #35)
+036. Store manuals (like this PDF) next to related audio notes. (tip #36)
+037. Use TXT for quick checklists that open everywhere. (tip #37)
+038. Confirm download completed before boarding a plane. (tip #38)
+039. Shuffle long libraries; use single loop for language drills. (tip #39)
+040. Keep Premium benefits in mind if ads interrupt your workflow. (tip #40)
+041. Keep filenames readable before import. (tip #41)
+042. Group course materials by semester folders. (tip #42)
+043. Use Favorites for daily essentials only. (tip #43)
+044. Clear completed Tasks occasionally for a tidy Downloads list. (tip #44)
+045. Prefer HTTPS direct links when downloading documents. (tip #45)
+046. Verify free storage before large Wi-Fi uploads. (tip #46)
+047. Name playlists by context, not by date alone. (tip #47)
+048. Try Dark Mode for nighttime reading of this guide. (tip #48)
+049. Use search in Files when libraries grow past a few dozen items. (tip #49)
+050. Bookmark stable reference sites in the Browser tab. (tip #50)
+051. Revisit Recently Played when you forgot the playlist name. (tip #51)
+052. Delete bundled samples after you no longer need demos. (tip #52)
+053. Keep personal IDs out of shared iPad libraries. (tip #53)
+054. Turn on app lock for shared family hardware. (tip #54)
+055. Upload from computer when phone cameras are low on space. (tip #55)
+056. Store manuals (like this PDF) next to related audio notes. (tip #56)
+057. Use TXT for quick checklists that open everywhere. (tip #57)
+058. Confirm download completed before boarding a plane. (tip #58)
+059. Shuffle long libraries; use single loop for language drills. (tip #59)
+060. Keep Premium benefits in mind if ads interrupt your workflow. (tip #60)
+061. Keep filenames readable before import. (tip #61)
+062. Group course materials by semester folders. (tip #62)
+063. Use Favorites for daily essentials only. (tip #63)
+064. Clear completed Tasks occasionally for a tidy Downloads list. (tip #64)
+065. Prefer HTTPS direct links when downloading documents. (tip #65)
+066. Verify free storage before large Wi-Fi uploads. (tip #66)
+067. Name playlists by context, not by date alone. (tip #67)
+068. Try Dark Mode for nighttime reading of this guide. (tip #68)
+069. Use search in Files when libraries grow past a few dozen items. (tip #69)
+070. Bookmark stable reference sites in the Browser tab. (tip #70)
+071. Revisit Recently Played when you forgot the playlist name. (tip #71)
+072. Delete bundled samples after you no longer need demos. (tip #72)
+073. Keep personal IDs out of shared iPad libraries. (tip #73)
+074. Turn on app lock for shared family hardware. (tip #74)
+075. Upload from computer when phone cameras are low on space. (tip #75)
+076. Store manuals (like this PDF) next to related audio notes. (tip #76)
+077. Use TXT for quick checklists that open everywhere. (tip #77)
+078. Confirm download completed before boarding a plane. (tip #78)
+079. Shuffle long libraries; use single loop for language drills. (tip #79)
+080. Keep Premium benefits in mind if ads interrupt your workflow. (tip #80)
+081. Keep filenames readable before import. (tip #81)
+082. Group course materials by semester folders. (tip #82)
+083. Use Favorites for daily essentials only. (tip #83)
+084. Clear completed Tasks occasionally for a tidy Downloads list. (tip #84)
+085. Prefer HTTPS direct links when downloading documents. (tip #85)
+086. Verify free storage before large Wi-Fi uploads. (tip #86)
+087. Name playlists by context, not by date alone. (tip #87)
+088. Try Dark Mode for nighttime reading of this guide. (tip #88)
+089. Use search in Files when libraries grow past a few dozen items. (tip #89)
+090. Bookmark stable reference sites in the Browser tab. (tip #90)
+091. Revisit Recently Played when you forgot the playlist name. (tip #91)
+092. Delete bundled samples after you no longer need demos. (tip #92)
+093. Keep personal IDs out of shared iPad libraries. (tip #93)
+094. Turn on app lock for shared family hardware. (tip #94)
+095. Upload from computer when phone cameras are low on space. (tip #95)
+096. Store manuals (like this PDF) next to related audio notes. (tip #96)
+097. Use TXT for quick checklists that open everywhere. (tip #97)
+098. Confirm download completed before boarding a plane. (tip #98)
+099. Shuffle long libraries; use single loop for language drills. (tip #99)
+100. Keep Premium benefits in mind if ads interrupt your workflow. (tip #100)
+101. Keep filenames readable before import. (tip #101)
+102. Group course materials by semester folders. (tip #102)
+103. Use Favorites for daily essentials only. (tip #103)
+104. Clear completed Tasks occasionally for a tidy Downloads list. (tip #104)
+105. Prefer HTTPS direct links when downloading documents. (tip #105)
+106. Verify free storage before large Wi-Fi uploads. (tip #106)
+107. Name playlists by context, not by date alone. (tip #107)
+108. Try Dark Mode for nighttime reading of this guide. (tip #108)
+109. Use search in Files when libraries grow past a few dozen items. (tip #109)
+110. Bookmark stable reference sites in the Browser tab. (tip #110)
+111. Revisit Recently Played when you forgot the playlist name. (tip #111)
+112. Delete bundled samples after you no longer need demos. (tip #112)
+113. Keep personal IDs out of shared iPad libraries. (tip #113)
+114. Turn on app lock for shared family hardware. (tip #114)
+115. Upload from computer when phone cameras are low on space. (tip #115)
+116. Store manuals (like this PDF) next to related audio notes. (tip #116)
+117. Use TXT for quick checklists that open everywhere. (tip #117)
+118. Confirm download completed before boarding a plane. (tip #118)
+119. Shuffle long libraries; use single loop for language drills. (tip #119)
+120. Keep Premium benefits in mind if ads interrupt your workflow. (tip #120)
+
+— End of Offline Ultra sample getting-started TXT —
